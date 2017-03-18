@@ -10,12 +10,14 @@
     <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./aos/dist/aos.css" />
 
     <script src="jQuery/jquery-3.1.1.min.js"></script>
     <script src="jQuery/jquery-ui.min.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="./bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
     <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+    <script src="./aos/dist/aos.js"></script>
 
     <link href="style/css/style.css" rel="stylesheet">
 </head>
@@ -24,7 +26,7 @@
     <div class="container-fluid">
         <header class="site-header">
             <!--Contact list-->
-            <ul class="contact-list">
+            <ul class="contact-list" data-aos="slide-right">
                 <li>CÔNG TY TNHH CÔNG NGHỆ VŨ ANH</li>
                 <li><i class="fa fa-phone"></i>0973.426.800</li>
                 <li><i class="fa fa-envelope"></i> anhtran@vatechco.com</li>
@@ -65,7 +67,7 @@
             </nav>
 
             <!--Banner top-->
-            <div class="banner-top">
+            <div class="banner-top" data-aos="zoom-in">
                 <img src="./images/smarthomes.png">
             </div>
         </header>
@@ -124,10 +126,10 @@
             <hr/>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 image-container">
+                    <div class="col-md-5 image-container" data-aos="flip-right">
                         <img src="./images/product-group/smart-Home.png">
                     </div>
-                    <div class="col-md-7 text-container">
+                    <div class="col-md-7 text-container" data-aos="slide-left">
                         <h3>SmartHome</h3>
 
                         <p>Nhà thông minh kết nối tất cả các thiết bị trong nhà bạn thành một mạng lưới, qua đó có thể điều khiển chúng theo những kịch bản thông minh</p>
@@ -138,12 +140,12 @@
             <hr/>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 text-container">
+                    <div class="col-md-7 text-container" data-aos="slide-right">
                         <h3>Thiết bị an ninh</h3>
                         <p>Giải pháp an ninh giám sát với những công nghệ tối ưu và sự đa dạng các dòng sản phẩm đã ngày càng đem lại sự an toàn, tin cậy cho từng hộ gia đình hay các cơ quan, xí nghiệp</p>
                         <a href="#"><button type="button" class="btn btn-outline-success">Xem ngay</button></a>
                     </div>
-                    <div class="col-md-5 image-container">
+                    <div class="col-md-5 image-container" data-aos="flip-right">
                         <img src="images/product-group/accessControl.jpg" />
                     </div>
                 </div>
@@ -151,10 +153,10 @@
             <hr/>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 image-container">
+                    <div class="col-md-5 image-container" data-aos="flip-right">
                         <img src="images/product-group/officeMachines.jpg" />
                     </div>
-                    <div class="col-md-7 text-container">
+                    <div class="col-md-7 text-container" data-aos="slide-left">
                         <h3>Thiết bị văn phòng</h3>
                         <p>Đa dạng trong các dòng sản phẩm chuyên dùng cho văn phòng cùng sự tích hơp những giải pháp liên quan, chúng tôi đem đến sự lựa chọn tổng thể cho văn phòng của bạn</p>
                         <a href="#"><button type="button" class="btn btn-outline-success">Xem ngay</button></a>
@@ -165,12 +167,12 @@
             <hr/>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 text-container">
+                    <div class="col-md-7 text-container" data-aos="slide-right">
                         <h3>Công nghiệp</h3>
                         <p>Với các sản phẩm như tủ bảng điện, biến tần, cảm biến,… cùng giải pháp từ phần cứng đến phần mềm, chúng tôi mong muốn đem đến sự tin cậy trong sản xuất cho mọi nhà máy</p>
                         <a href="#"><button type="button" class="btn btn-outline-success">Xem ngay</button></a>
                     </div>
-                    <div class="col-md-5 image-container">
+                    <div class="col-md-5 image-container" data-aos="flip-right">
                         <img src="images/product-group/Industry.jpg" />
                     </div>
                 </div>
@@ -197,6 +199,12 @@
         </div>
     </div>
     <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-cubic',
+            delay: 100,
+        });
         $(document).ready(function() {
             var owl = $('.owl-carousel');
             owl.owlCarousel({
@@ -228,8 +236,7 @@
             })
         });
         $(window).on("load", function() {
-            $('.contact-list').effect("slide", {}, 2000, function() {});
-            $('.banner-top-title').effect("slide", {
+            $('.product-group-carousel').effect("slide", {
                 direction: "up"
             }, 2000, function() {});
         });
