@@ -1,7 +1,4 @@
-$red: #5CB85C;
-$grey:#3E3E40;
-$light-grey: #D4D4D4;
-$grey-border: 1px solid $light-grey;
+$mainColor: #5CB85C;
 
 /*LAYOUT*/
 
@@ -48,10 +45,10 @@ body {
 // Footer
 .footer-container {
     width: 100%;
-    background-color: darken($red, 5%);
+    background-color: darken($mainColor, 5%);
     margin-top: 24px;
     .footer-bonus {
-        background-color: $red;
+        background-color: $mainColor;
         padding: 20px;
         .footer-about {
             color: white;
@@ -62,7 +59,7 @@ body {
                 padding: 4px 0px;
                 border-radius: 12px;
                 background-color: white;
-                color: $red;
+                color: $mainColor;
                 margin-right: 12px;
             }
         }
