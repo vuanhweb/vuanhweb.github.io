@@ -47,8 +47,16 @@ body {
     }
     .banner-top {
         width: 100%;
+        overflow: hidden;
         img {
             width: 100%;
+        }
+        @media (max-width: 800px) {
+            img {
+                -moz-transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
         }
     }
 }
