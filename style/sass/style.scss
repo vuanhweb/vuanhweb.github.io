@@ -32,6 +32,17 @@ body {
         }
         #main-nav {
             font-size: 1.2em;
+            ul {
+                li {
+                    margin-right: 24px;
+                }
+            }
+            button {
+                border: none;
+                background-color: transparent;
+                color: white;
+                font-size: 1.2em;
+            }
         }
     }
     .banner-top {

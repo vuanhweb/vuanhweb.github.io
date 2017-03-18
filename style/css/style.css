@@ -18,6 +18,13 @@ body .container-fluid {
   height: 42px; }
 .site-header nav #main-nav {
   font-size: 1.2em; }
+  .site-header nav #main-nav ul li {
+    margin-right: 24px; }
+  .site-header nav #main-nav button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em; }
 .site-header .banner-top {
   width: 100%; }
   .site-header .banner-top img {
