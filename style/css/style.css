@@ -14,6 +14,8 @@ body .container-fluid {
     font-size: 1.2em; }
     .site-header ul.contact-list li .fa {
       margin-right: 8px; }
+.site-header nav .navbar-brand {
+  height: 42px; }
 .site-header nav #main-nav {
   font-size: 1.2em; }
 .site-header .banner-top {

@@ -30,6 +30,9 @@ body {
         }
     }
     nav {
+        .navbar-brand {
+            height: 42px;
+        }
         #main-nav {
             font-size: 1.2em;
         }
