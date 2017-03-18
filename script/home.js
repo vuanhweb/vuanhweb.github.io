@@ -30,10 +30,6 @@ $(document).ready(function() {
             }
         }
     });
-    // owl.on('changed.owl.carousel', function(event) {
-    //         owl.trigger('play.owl.autoplay');
-    //         console.log("triggered");
-    //     })
     $('.product-group-carousel .item .block a').on('mouseleave', function(e) {
         owl.trigger('next.owl.carousel', [3000]);
     })

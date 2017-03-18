@@ -112,6 +112,12 @@ body .container-fluid {
     text-align: center; }
   .product-group-detail .container .text-container {
     padding: 20px; }
+  @media (min-width: 768px) {
+    .product-group-detail .container:nth-of-type(odd) .text-container {
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+      -ms-flex-order: -1;
+      order: -1; } }
 
 .site-banner .image-container {
   width: 100%; }

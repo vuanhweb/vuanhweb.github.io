@@ -169,6 +169,16 @@ body {
         .text-container {
             padding: 20px;
         }
+        &:nth-of-type(odd) {
+            @media (min-width: 768px) {
+                .text-container {
+                    -webkit-box-ordinal-group: 0;
+                    -webkit-order: -1;
+                    -ms-flex-order: -1;
+                    order: -1;
+                }
+            }
+        }
     }
 }
 
