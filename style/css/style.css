@@ -113,6 +113,11 @@ body .container-fluid {
   .product-group-detail .container .text-container {
     padding: 20px; }
 
+.site-banner .image-container {
+  width: 100%; }
+  .site-banner .image-container img {
+    width: 100%; }
+
 /*END-HOME*/
 
 /*# sourceMappingURL=style.css.map */
