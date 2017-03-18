@@ -14,9 +14,10 @@ $(document).ready(function() {
         dots: false,
         responsiveClass: true,
         responsiveRefreshRate: 10,
-        autoplay: false,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 3000,
         responsive: {
             0: {
                 items: 1
@@ -29,9 +30,12 @@ $(document).ready(function() {
             }
         }
     });
+    // owl.on('changed.owl.carousel', function(event) {
+    //         owl.trigger('play.owl.autoplay');
+    //         console.log("triggered");
+    //     })
     $('.product-group-carousel .item .block a').on('mouseleave', function(e) {
-        owl.trigger('play.owl.autoplay', [1000]);
-        console.log("Trigger");
+        owl.trigger('next.owl.carousel', [3000]);
     })
 });
 $(window).on("load", function() {
