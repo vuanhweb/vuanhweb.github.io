@@ -12,6 +12,7 @@ $(document).ready(function() {
         margin: 10,
         nav: false,
         dots: false,
+        animateIn: 'flipInX',
         responsiveClass: true,
         responsiveRefreshRate: 10,
         autoplay: true,
