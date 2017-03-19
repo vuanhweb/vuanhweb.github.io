@@ -64,9 +64,11 @@ body {
 // Footer
 .footer-container {
     width: 100%;
-    background-color: darken($mainColor, 5%);
+    background-color: darken($mainColor, 10%);
     margin-top: 24px;
     .footer-bonus {
+        background: url(../../images/abstr1.png) no-repeat top right;
+        background-size: auto 100%;
         background-color: $mainColor;
         padding: 20px;
         .footer-about {

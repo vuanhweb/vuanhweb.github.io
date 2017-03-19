@@ -42,6 +42,8 @@ body .container-fluid {
   margin-top: 24px; }
   .footer-container .footer-bonus {
     background-color: #5CB85C;
+    background: url(../../images/abstr1.png) no-repeat top right;
+    background-size: auto 100%;
     padding: 20px; }
     .footer-container .footer-bonus .footer-about {
       color: white; }
